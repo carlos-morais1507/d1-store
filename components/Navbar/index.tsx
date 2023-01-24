@@ -53,7 +53,7 @@ const Navbar = () => {
           </label>
           <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 drop-shadow-xl border-2 border-neutral bg-base-100 rounded-box w-52">
             <li className={(logged) ? "block" : "hidden"}><a className="justify-between">Meu Perfil</a></li>
-            <li className={(logged) ? "block" : "hidden"}><a>Favoritos</a></li>
+            <li className={`${(logged) ? "block" : "hidden"}`}><a>Favoritos <span className='badge ml-1'>2</span></a></li>
             <li  className={`${(logged) ? "block" : "hidden"} text-error`}><a>Logout</a></li>
             <li  className={`${(logged) ? "hidden" : "block"} text-success`}><a>Login</a></li>            
           </ul>
