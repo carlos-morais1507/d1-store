@@ -8,7 +8,9 @@ const unbounded = Unbounded({
   subsets: ['latin'],
 })
 
+
 const Navbar = () => {
+
   return (
     <>
     <div className="navbar border-b-neutral fixed border-b-2 hidden sm:flex">
@@ -57,19 +59,26 @@ const Navbar = () => {
         </div>
       </div>
     </div>
-    <div className="btm-nav sm:hidden">
-      <button className="active">
-        <BsFillHouseFill />
+    <div className="btm-nav sm:hidden border-t-2 border-t-neutral">
+      <button>
+        <Link href="/">
+          <BsFillHouseFill />
+        </Link>
       </button>
       <button>
         <BsSearch />
       </button>
       <button>
-        <BsFillCartFill />
-        </button>
-        <button>
-          <BsFillPersonFill />
-        </button>
+        <Link href="/Cart">
+          <div className="indicator">
+            <BsFillCartFill className="text-xl"/>
+            <span className={`${(prod__count > 0) ? "" : "hidden"} badge badge-sm indicator-item bg-primary text-inherit`}>{prod__count}</span>
+          </div>
+        </Link>
+      </button>
+      <button>
+        <BsFillPersonFill />
+      </button>
     </div>
     </>
   )

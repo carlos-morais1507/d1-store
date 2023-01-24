@@ -10,7 +10,7 @@ const Cart = () => {
       <Head>
         <title>D1 - Carrinho</title>
       </Head>
-      <main className={`${inter.className} mt-[66px]`}>
+      <main className={`${inter.className} sm:mt-[66px]`}>
         Cart
       </main>
     </>
