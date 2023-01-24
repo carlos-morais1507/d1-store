@@ -14,7 +14,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={`${inter.className} bg-base-100 sm:mt-[66px]`}>
+      <main className={`${inter.className} bg-base-100 sm:mt-[66px] mb-[64px] sm:mb-0`}>
         <Hero />
         <Featured />
       </main>
