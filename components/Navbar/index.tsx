@@ -1,8 +1,7 @@
 import Link from "next/link"
-import { BsFillCartFill, BsSearch } from 'react-icons/bs'
+import { BsFillCartFill, BsFillHouseFill, BsFillPersonFill, BsSearch } from 'react-icons/bs'
 import { Unbounded } from "@next/font/google"
 import { prod__count, price__total, logged } from "@/store/StoreVars"
-import Image from "next/image"
 
 const unbounded = Unbounded({
   weight: '800',
@@ -11,7 +10,8 @@ const unbounded = Unbounded({
 
 const Navbar = () => {
   return (
-    <div className="navbar border-b-neutral fixed border-b-2">
+    <>
+    <div className="navbar border-b-neutral fixed border-b-2 hidden sm:flex">
       <div className="flex-1 LOGO">
         <Link href="/" className="btn btn-ghost normal-case text-xl">
           <h1 className={`${unbounded.className} font-black`}>D1STORE</h1>
@@ -27,7 +27,7 @@ const Navbar = () => {
           <label tabIndex={0} className="btn btn-circle btn-ghost">
             <div className="indicator">
               <BsFillCartFill className="text-xl"/>
-              <span className="badge badge-sm indicator-item bg-primary text-inherit">{prod__count}</span>
+              <span className={`${(prod__count > 0) ? "" : "hidden"} badge badge-sm indicator-item bg-primary text-inherit`}>{prod__count}</span>
             </div>      
           </label>
           <div className="mt-3 card card-compact dropdown-content bg-base-100 w-56 drop-shadow-xl border-2 border-neutral ">
@@ -57,6 +57,21 @@ const Navbar = () => {
         </div>
       </div>
     </div>
+    <div className="btm-nav sm:hidden">
+      <button className="active">
+        <BsFillHouseFill />
+      </button>
+      <button>
+        <BsSearch />
+      </button>
+      <button>
+        <BsFillCartFill />
+        </button>
+        <button>
+          <BsFillPersonFill />
+        </button>
+    </div>
+    </>
   )
 }
 
