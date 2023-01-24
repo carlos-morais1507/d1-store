@@ -5,7 +5,7 @@ const Featured = () => {
   return (
     <>
     <div className="flex justify-center">
-      <div className='grid gap-5 mt-10 sm:grid-cols-3'>
+      <div className='grid gap-5 mt-10 sm:grid-cols-2 xl:grid-cols-3'>
         <ProdCard />
         <ProdCard />
         <ProdCard />

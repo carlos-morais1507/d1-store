@@ -4,7 +4,7 @@ import { BsFillStarFill } from 'react-icons/bs'
 const ProdCard = () => {
   return (
     <>
-      <div className="card w-96 bg-base-100 shadow xl mb-10">
+      <div className="card w-96 bg-base-100 shadow xl mb-10 border-2 border-neutral">
         <figure><img src="https://i.ibb.co/qJL6pyq/Design-sem-nome.png" alt="Design-sem-nome" /></figure>
         <div className='card-body'>
           <h2 className="card-title">Produto 1</h2>
