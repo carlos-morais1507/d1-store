@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from 'react';
 import Link from "next/link"
 import { BsFillCartFill, BsFillHouseFill, BsFillPersonFill, BsSearch } from 'react-icons/bs'
 import { Unbounded } from "@next/font/google"
@@ -13,7 +14,7 @@ const Navbar = () => {
 
   return (
     <>
-    <div className="navbar border-b-neutral fixed border-b-2 hidden sm:flex">
+    <div className="navbar border-b-neutral fixed border-b-2 hidden sm:flex z-10 bg-base-100">
       <div className="flex-1 LOGO">
         <Link href="/" className="btn btn-ghost normal-case text-xl">
           <h1 className={`${unbounded.className} font-black`}>D1STORE</h1>
@@ -52,14 +53,14 @@ const Navbar = () => {
           </label>
           <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 drop-shadow-xl border-2 border-neutral bg-base-100 rounded-box w-52">
             <li className={(logged) ? "block" : "hidden"}><a className="justify-between">Meu Perfil</a></li>
-            <li className={(logged) ? "block" : "hidden"}><a>Configurações</a></li>
+            <li className={(logged) ? "block" : "hidden"}><a>Favoritos</a></li>
             <li  className={`${(logged) ? "block" : "hidden"} text-error`}><a>Logout</a></li>
             <li  className={`${(logged) ? "hidden" : "block"} text-success`}><a>Login</a></li>            
           </ul>
         </div>
       </div>
     </div>
-    <div className="btm-nav sm:hidden border-t-2 border-t-neutral">
+    <div className="btm-nav sm:hidden border-t-2 border-t-neutral fixed z-10 bg-base-100">
       <button>
         <Link href="/">
           <BsFillHouseFill />

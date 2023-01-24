@@ -6,7 +6,11 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'hero-img': "url('/assets/images/heroimg1.png')"
+      }
+    },
   },
   daisyui: {
     themes: [
