@@ -23,7 +23,7 @@ const Navbar = () => {
       <div className="flex-none gap-2 SEARCH">
         <div className="form-control">
           <div className="input-group">
-            <input type="text" placeholder={`Pesquisar...`} className="input bg-base-200"/>
+            <input type="text" placeholder="Pesquisar..." className="input input-bordered bg-base-200"/>
             <button className='btn btn-square'>
               <BsSearch />
             </button>

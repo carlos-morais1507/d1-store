@@ -16,6 +16,9 @@ export default function Home() {
       </Head>
       <main className={`${inter.className} bg-base-100 sm:mt-[66px] mb-[64px] sm:mb-0`}>
         <Hero />
+        <h1 className='text-center text-5xl py-8 font-black bg-primary text-primary-content border-y-2 border-neutral'>POPULARES</h1>
+        <Featured />
+        <h1 className='text-center text-5xl py-8 font-black bg-secondary text-secondary-content border-y-2 border-neutral'>MAIS AMADOS</h1>
         <Featured />
       </main>
     </>
