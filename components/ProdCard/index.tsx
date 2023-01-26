@@ -10,7 +10,10 @@ const ProdCard = () => {
           <a href="#"><img src="https://i.ibb.co/qJL6pyq/Design-sem-nome.png" alt="Design-sem-nome" className='hover:brightness-50 transition-all duration-150'/></a>
         </figure>
         <div className='card-body'>
-          <h2 className="card-title text-2xl">Produto 1</h2>
+          <div className="card-title">
+            <h2 className="text-2xl">Produto 1</h2>
+            <span className='badge badge-primary p-2'><BsFillStarFill className='mr-1'/> 3,5</span>
+          </div>
           <div className='flex'>
             <h1 className={`mb-2 ${(prod__dprice > prod__nprice) ? "line-through text-error" : "text-info"}`}>R${prod__dprice.toFixed(2)}</h1>
             <h1 className={`ml-3 text-green-600 no-underline ${(prod__dprice > prod__nprice) ? "block" : "hidden"}`}>
