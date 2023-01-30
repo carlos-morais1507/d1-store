@@ -1,6 +1,7 @@
 import React from 'react'
 import { Inter } from '@next/font/google'
 import Head from 'next/head'
+import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,13 +19,13 @@ const LogIn = () => {
               <p className='sm:text-lg mt-5'>Não tem uma conta?</p>
               <a className='btn btn-primary border-2 border-neutral hover:border-2 hover:border-neutral' href="#">Cadastre-se Agora!</a>
             </div>
-            <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100 border-2 border-neutral">
+            <form className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100 border-2 border-neutral">
               <div className="card-body">
                 <div className="form-control">
                   <label className='label'>
                     <span className='label-text'>Email</span>
                   </label>
-                  <input type="text" placeholder='email' className='input input-bordered'/>
+                  <input type="email" placeholder='email' className='input input-bordered'/>
                 </div>
                 <div className="form-control">
                   <label className='label'>
@@ -33,12 +34,12 @@ const LogIn = () => {
                     <input type="password" placeholder='senha' className='input input-bordered'/>
                 </div>
                 <div className="form-control mt-6">
-                  <button className='btn btn-primary border-2 border-neutral hover:border-2 hover:border-neutral'>
-                    Login
-                  </button>
+                    <Link href="/" className='btn btn-primary border-2 border-neutral hover:border-2 hover:border-neutral'>
+                      Login
+                    </Link>
                 </div>
               </div>
-            </div>
+            </form>
             <div className="text-center lg:text-left mr-6 hidden sm:block">
               <h1 className="text-5xl font-bold">Faça login agora!</h1>
               <p className='py-6'>Entre na sua conta usando e-mail e senha!</p>

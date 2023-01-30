@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 export let prod__count = 0;
 export let price__total = 0;
 export let logged = false;
