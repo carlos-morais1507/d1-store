@@ -1,8 +1,16 @@
-import React from 'react'
-import { BsFillStarFill } from 'react-icons/bs'
+import React, { useState } from 'react'
+import { BsFillStarFill, BsFillHeartFill, BsHeart } from 'react-icons/bs'
 import { prod__dprice, prod__nprice, promo__value } from '@/store/StoreVars'
 
 const ProdCard = () => {
+  const [liked, setLiked] = useState(false);
+
+  function switchLiked() {
+    setLiked(!liked);
+
+    console.log(liked);
+  }
+
   return (
     <>
       <div className="card w-96 bg-base-100 shadow xl mb-10 border-2 border-neutral">
@@ -22,7 +30,7 @@ const ProdCard = () => {
             </h1>
           </div>
           <div className="card-actions justify-around">
-            <button className="btn btn-secondary btn-square"><BsFillStarFill className='text-2xl'/></button>
+            <button className="btn btn-secondary btn-square" onClick={() => switchLiked()}>{(liked) ? <BsFillHeartFill className='text-2xl'/> : <BsHeart className='text-2xl'/> }</button>
             <button className="btn btn-primary">Adicionar ao carrinho</button>
           </div>
         </div>

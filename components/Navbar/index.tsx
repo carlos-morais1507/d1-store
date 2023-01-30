@@ -60,7 +60,7 @@ const Navbar = () => {
             <li className={(logged) ? "block" : "hidden"}><a className="justify-between">Meu Perfil</a></li>
             <li className={`${(logged) ? "block" : "hidden"}`}><a>Favoritos <span className='badge ml-1'>2</span></a></li>
             <li  className={`${(logged) ? "block" : "hidden"} text-error`}><a>Logout</a></li>
-            <li  className={`${(logged) ? "hidden" : "block"} text-success`}><a>Login</a></li>            
+            <li  className={`${(logged) ? "hidden" : "block"} text-success`}><Link href="/Login">Login</Link></li>            
           </ul>
         </div>
       </div>
