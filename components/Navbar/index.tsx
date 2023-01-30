@@ -82,9 +82,10 @@ const Navbar = () => {
           </div>
         </Link>
       </button>
-      <button>
+      
+      <Link href={(logged) ? "/Cart" : "/Login"}>
         <BsFillPersonFill />
-      </button>
+      </Link>
     </div>
     </>
   )

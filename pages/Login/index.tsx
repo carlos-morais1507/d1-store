@@ -19,24 +19,22 @@ const LogIn = () => {
               <p className='sm:text-lg mt-5'>Não tem uma conta?</p>
               <a className='btn btn-primary border-2 border-neutral hover:border-2 hover:border-neutral' href="#">Cadastre-se Agora!</a>
             </div>
-            <form className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100 border-2 border-neutral">
+            <form action='/' className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100 border-2 border-neutral">
               <div className="card-body">
                 <div className="form-control">
                   <label className='label'>
                     <span className='label-text'>Email</span>
                   </label>
-                  <input type="email" placeholder='email' className='input input-bordered'/>
+                  <input type="email" placeholder='email' className='input input-bordered' required/>
                 </div>
                 <div className="form-control">
                   <label className='label'>
                       <span className='label-text'>Senha</span>
                     </label>
-                    <input type="password" placeholder='senha' className='input input-bordered'/>
+                    <input type="password" placeholder='senha' className='input input-bordered' required/>
                 </div>
                 <div className="form-control mt-6">
-                    <Link href="/" className='btn btn-primary border-2 border-neutral hover:border-2 hover:border-neutral'>
-                      Login
-                    </Link>
+                  <input type="submit" value="Login"  className='btn btn-primary border-2 border-neutral hover:border-2 hover:border-neutral'/>
                 </div>
               </div>
             </form>

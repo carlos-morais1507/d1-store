@@ -15,7 +15,7 @@ module.exports = {
   daisyui: {
     themes: [
       {
-        mytheme: {
+        light: {
         
           "primary": "#dbb35e",
         
