@@ -17,7 +17,9 @@ const LogIn = () => {
           <div className="text-center lg:text-left mr-6 block sm:hidden">
               <h1 className="text-4xl font-bold">Faça login agora!</h1>
               <p className='sm:text-lg mt-5'>Não tem uma conta?</p>
-              <a className='btn btn-primary border-2 border-neutral hover:border-2 hover:border-neutral' href="#">Cadastre-se Agora!</a>
+              <Link className='btn btn-primary border-2 border-neutral hover:border-2 hover:border-neutral' href="/Login/Signup">
+                Cadastre-se Agora!
+              </Link>
             </div>
             <form action='/' className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100 border-2 border-neutral">
               <div className="card-body">
@@ -42,7 +44,9 @@ const LogIn = () => {
               <h1 className="text-5xl font-bold">Faça login agora!</h1>
               <p className='py-6'>Entre na sua conta usando e-mail e senha!</p>
               <p className='sm:text-lg'>Não tem uma conta?</p>
-              <a className='btn btn-primary border-2 border-neutral hover:border-2 hover:border-neutral' href="#">Cadastre-se Agora!</a>
+              <Link className='btn btn-primary border-2 border-neutral hover:border-2 hover:border-neutral' href="/Login/Signup">
+                Cadastre-se Agora!
+              </Link>
             </div>
           </div>
         </div>
