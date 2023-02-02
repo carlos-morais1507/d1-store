@@ -2,10 +2,16 @@ import React from 'react'
 import { Inter } from '@next/font/google'
 import Head from 'next/head'
 import Link from 'next/link'
+import { useEffect } from 'react';
+import { themeChange } from 'theme-change';
 
 const inter = Inter({ subsets: ['latin'] })
 
 const LogIn = () => {
+  useEffect(() => {
+    themeChange(false)
+  }, [])
+
   return (
     <>
       <Head>

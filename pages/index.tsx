@@ -2,10 +2,16 @@ import Head from 'next/head'
 import { Inter } from '@next/font/google'
 import Hero from '../components/Hero'
 import Featured from '@/components/Featured'
+import { useEffect } from 'react';
+import { themeChange } from 'theme-change';
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+  useEffect(() => {
+    themeChange(false)
+  }, [])
+
   return (
     <>
       <Head>

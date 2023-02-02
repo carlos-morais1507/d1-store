@@ -3,6 +3,7 @@ import Link from "next/link"
 import { BsFillCartFill, BsFillHouseFill, BsFillPersonFill, BsSearch } from 'react-icons/bs'
 import { Unbounded } from "@next/font/google"
 import { prod__count, price__total, logged } from "@/store/StoreVars"
+import { themeChange } from 'theme-change';
 
 const unbounded = Unbounded({
   weight: '800',
@@ -11,6 +12,10 @@ const unbounded = Unbounded({
 
 
 const Navbar = () => {
+  useEffect(() => {
+    themeChange(false)
+  }, [])
+
 
   return (
     <>
@@ -59,6 +64,7 @@ const Navbar = () => {
           <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 drop-shadow-xl border-2 border-neutral bg-base-100 rounded-box w-52">
             <li className={(logged) ? "block" : "hidden"}><a className="justify-between">Meu Perfil</a></li>
             <li className={`${(logged) ? "block" : "hidden"}`}><a>Favoritos <span className='badge ml-1'>2</span></a></li>
+            <button data-toggle-theme="light,dark" data-act-class="ACTIVECLASS" className='btn btn-primary'>UAU</button>
             <li  className={`${(logged) ? "block" : "hidden"} text-error`}><a>Logout</a></li>
             <li  className={`${(logged) ? "hidden" : "block"} text-success`}><Link href="/Login">Login</Link></li>            
           </ul>

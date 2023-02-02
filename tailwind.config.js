@@ -36,15 +36,15 @@ module.exports = {
           "error": "#E92F64",
         },
         dark: {
-          "primary": "#f97316",
+          "primary": "#ff9347",
           
           "secondary": "#e01d64",
           
           "accent": "#12eab8",
           
-          "neutral": "#221E25",
+          "neutral": "#F2F1F4",
           
-          "base-100": "#323439",
+          "base-100": "#232429",
           
           "info": "#9DDAF0",
           
