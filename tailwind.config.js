@@ -35,6 +35,25 @@ module.exports = {
         
           "error": "#E92F64",
         },
+        dark: {
+          "primary": "#f97316",
+          
+          "secondary": "#e01d64",
+          
+          "accent": "#12eab8",
+          
+          "neutral": "#221E25",
+          
+          "base-100": "#323439",
+          
+          "info": "#9DDAF0",
+          
+          "success": "#64D8A0",
+          
+          "warning": "#EFAE3E",
+          
+          "error": "#F41F4A",
+        }
       },
     ],
   },
