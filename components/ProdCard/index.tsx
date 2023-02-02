@@ -24,9 +24,9 @@ const ProdCard = () => {
           </div>
           <div className='flex'>
             <h1 className={`mb-2 ${(prod__dprice > prod__nprice) ? "line-through text-error" : "text-info"}`}>R${prod__dprice.toFixed(2)}</h1>
-            <h1 className={`ml-3 text-green-600 no-underline ${(prod__dprice > prod__nprice) ? "block" : "hidden"}`}>
+            <h1 className={`ml-3 text-success ${(prod__dprice > prod__nprice) ? "block" : "hidden"} font-semibold`}>
               R${prod__nprice.toFixed(2)}
-              <span className='badge badge-secondary p-2 ml-2'>Poupe {promo__value.toFixed(0)}%</span>
+              <span className='badge badge-success p-2 ml-2'>Poupe {promo__value.toFixed(0)}%</span>
             </h1>
           </div>
           <div className="card-actions justify-around">

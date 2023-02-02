@@ -29,22 +29,22 @@ module.exports = {
         
           "info": "#9BB0EE",
         
-          "success": "#0F6143",
+          "success": "#1bb67d",
         
           "warning": "#E17E05",
         
           "error": "#E92F64",
         },
         dark: {
-          "primary": "#ff9347",
+          "primary": "#726A95",
           
-          "secondary": "#e01d64",
+          "secondary": "#719FB0",
           
           "accent": "#12eab8",
           
           "neutral": "#F2F1F4",
           
-          "base-100": "#232429",
+          "base-100": "#2e2330",
           
           "info": "#9DDAF0",
           
