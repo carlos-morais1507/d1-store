@@ -7,8 +7,6 @@ const ProdCard = () => {
 
   function switchLiked() {
     setLiked(!liked);
-
-    console.log(liked);
   }
 
   return (

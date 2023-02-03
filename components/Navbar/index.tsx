@@ -16,8 +16,6 @@ const Navbar = () => {
     themeChange(false)
   }, [])
 
-
-
   return (
     <>
     <div className="navbar border-b-neutral fixed border-b-2 hidden sm:flex z-10 bg-base-100">
