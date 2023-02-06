@@ -17,9 +17,9 @@ module.exports = {
       {
         light: {
         
-          "primary": "#dbb35e",
+          "primary": "#ffc547",
         
-          "secondary": "#2fc680",
+          "secondary": "#29dd89",
         
           "accent": "#ce466a",
         
@@ -27,7 +27,7 @@ module.exports = {
         
           "base-100": "#F2F1F4",
         
-          "info": "#9BB0EE",
+          "info": "#648bff",
         
           "success": "#1bb67d",
         
@@ -36,15 +36,15 @@ module.exports = {
           "error": "#E92F64",
         },
         dark: {
-          "primary": "#726A95",
+          "primary": "#9e89ff",
           
-          "secondary": "#719FB0",
+          "secondary": "#84deff",
           
           "accent": "#12eab8",
           
-          "neutral": "#F2F1F4",
+          "neutral": "#cccccc",
           
-          "base-100": "#2e2330",
+          "base-100": "#201d20",
           
           "info": "#9DDAF0",
           
