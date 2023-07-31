@@ -14,5 +14,22 @@ module.exports = {
       },
     },
   },
+  daisyui: {
+    themes: [
+      {
+        mytheme: {
+          "primary": "#f0abfc",        
+          "secondary": "#facc15",         
+          "accent": "#7c3aed",        
+          "neutral": "#f3f4f6",        
+          "base-100": "#f3f4f6",         
+          "info": "#9DDAF0",        
+          "success": "#64D8A0",       
+          "warning": "#EFAE3E",        
+          "error": "#F41F4A",
+        },
+      },
+    ],
+  },
   plugins: [require("@tailwindcss/typography"), require("daisyui")],
 }
